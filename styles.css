@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Rubik";
+  text-align: center;
+  background-color: rgb(204, 208, 224);
+  color: black;
+  padding: 20px 0;
+  border-bottom: 5px solid black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(204, 208, 224);
+  padding-top: 20px;
+}
+
+h2 {
+  color: black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.teaminfo-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(204, 208, 224);
+  padding: 50px 0px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-container {
+  padding: 20px 16px;
+  width: 400px;
+  border: 5px solid black;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.input-name {
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
+.input-record {
+  width: 100%;
+  padding: 10px 10px;
+}
+
+.radios {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+
+.team-location {
+  display: flex;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.add-team {
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+
+  padding: 5px 40px;
+}
+
+/* Bottom Section */
+
+.score-container {
+  display: flex;
+  background-color: rgb(204, 208, 224);
+  justify-content: space-around;
+  padding: 40px 0px;
+}
+
+/* Input Section */
+
+.scoreInput-container {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  height: 300px;
+  background-color: white;
+}
+
+.form-container {
+  display: flex;
+  flex: 1;
+}
+
+/* Choose Team Section */
+
+.choose-team-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+  justify-content: space-evenly;
+}
+
+.choose-team-h1 {
+  font-size: 1.5rem;
+}
+
+.choose-home-radio,
+.choose-away-radio {
+  margin-right: 5px;
+}
+
+.choose-home,
+.choose-away {
+  font-size: 1.5rem;
+}
+
+/* Update Score Section */
+
+.update-score-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.update-score-box {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  margin-top: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+}
+
+/* Button Section */
+
+.button-section {
+  text-align: center;
+  flex: 0.5;
+}
+
+.submit-button,
+.new-game-button {
+  margin: 13px 20px 20px 10px;
+
+  width: 160px;
+  padding: 10px 30px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Current Score Section */
+
+.currentScore-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.away-container,
+.home-container {
+  width: 45%;
+}
+
+.away-score,
+.home-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 150px;
+  width: 70%;
+  border: 5px solid black;
+  border-radius: 5px;
+  font-size: 6rem;
+  background-color: white;
+}
+
+.away-school-name,
+.home-school-name,
+.away-school-record,
+.home-school-record {
+  visibility: hidden;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 15px;
+  height: 24px;
+}
+
+footer {
+  background-color: rgb(204, 208, 224);
+}
