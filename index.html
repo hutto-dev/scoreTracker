@@ -34,15 +34,7 @@
               placeholder="2-9"
           /></label>
           <div class="radios">
-            <div class="radio-home">
-              <input
-                type="radio"
-                id="home-radio"
-                name="location-radios"
-                class="radio"
-              />
-              <label for="home-radio" class="team-location">Home</label>
-            </div>
+           
             <div class="radio-away">
               <input
                 type="radio"
@@ -51,6 +43,15 @@
                 class="radio"
               />
               <label for="away-radio" class="team-location">Away</label></div>
+              <div class="radio-home">
+              <input
+                type="radio"
+                id="home-radio"
+                name="location-radios"
+                class="radio"
+              />
+              <label for="home-radio" class="team-location">Home</label>
+            </div>
               <button id="add-team" class="add-team">Add Team</button>
             
           </div>
@@ -64,14 +65,14 @@
             <div class="choose-team-section"><h1 class="choose-team-h1">Choose Team</h1>
               <div class="choose-radios">
                 <input type="radio" id="choose-away" name="choose" class="choose-away-radio">
-                <label for="choose-away" id="choose-away" class="choose-away">Away</label>
+                <label for="choose-away" id="choose-away-label" class="choose-away-label">Away</label>
                 <input type="radio" id="choose-home" name="choose" class="choose-home-radio">
-                <label for="choose-home" id="choose-home" class="choose-home">Home</label>
+                <label for="choose-home" id="choose-home-label" class="choose-home-label">Home</label>
               </div>
               
             </div>
             <div class="update-score-section">Update Score
-              <input type='text' class="update-score-box">
+              <input type='text' class="update-score-box" id="update-score-box">
             </div>
             <div class="button-section">
               <button id="submit-button" class="submit-button">Submit</button>
@@ -82,13 +83,13 @@
         <div class="currentScore-container">
           <div class="away-container">
             <h1 id="away-title">AWAY</h1>
-            <div class="away-score">0</div>
+            <div class="away-score" id="away-score">0</div>
             <p id="away-school-name" class="away-school-name">SCHOOL NAME</p>
             <p id="away-school-record" class="away-school-record">RECORD</p>
           </div>
           <div class="home-container">
             <h1 id="home-title">HOME</h1>
-            <div class="away-score">0</div>
+            <div class="home-score" id="home-score">0</div>
             <p id="home-school-name" class="home-school-name">SCHOOL NAME</p>
             <p id="home-school-record" class="home-school-record">RECORD</p>
           </div>
@@ -96,6 +97,11 @@
       </div>
     </main>
     <footer>@ 2025</footer>
+    <div class="modal-container" id="modal-container">
+      <p class="modal-text">Are you sure you want to start a new game?</p>
+      <button class="modal-button-yes" id="modal-button-yes">YES!</button>
+      <button class="modal-button-no" id="modal-button-no">Cancel</button>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
